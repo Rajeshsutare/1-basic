@@ -1,0 +1,32 @@
+
+
+<p class="bg-warning text-dark p-4 m-2">
+    This is Product {{productName}} and whose model is {{productModel}}...
+</p>
+
+<div class="info bg-primary text-white p-4 m-2">
+    {{productInfo}} and whose product Id is {{productId}}
+    does it contain charger? - {{IsCharger}}.
+</div>
+<h1 class="text-center my-4">Creating Ul Li </h1>
+<ul class="list-group  bg-danger  p-4 m-2">
+    <li class="list-group-item text-dark p-3 m-2 text-center" *ngFor="let state of states;let i=index">
+       The CM of <strong><em>{{state}}</em></strong> is <strong><em>{{Cm[i]}}</em></strong> and his monthly income is <strong>{{income[i]}}.</strong>
+    </li>
+</ul>
+<ul class="list-group bg-success p-4 m-2">
+    <li class="list-group-item bg-dark text-white p-3 m-2 text-center" *ngFor="let cost of prise;let i=index ">
+        the Cost of <strong class="text-warning">{{products[i]}}</strong> is  <strong class="text-warning">{{cost}}</strong>.
+    </li>
+</ul>
+<ul class="list-group bg-primary p-4 m-2">
+    <li class="list-group-item bg-dark text-white p-3 m-2 text-center" *ngFor="let president of presidents;let i=index">
+        The president of {{countries[i]}} is {{president}}.
+    </li>
+</ul>
+
+
+
+
+
+

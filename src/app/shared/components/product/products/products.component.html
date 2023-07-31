@@ -1,0 +1,49 @@
+<h1 class="text-center mt-3">Employee Detail</h1>
+<table class="table table-bordered text-center my-5">
+    <thead class="bg-info text-white p-4 text-uppercase">
+        <tr>
+            <th>Sr No</th>
+            <th>First Name</th>
+            <th>First Name</th>
+            <th>Contact</th>
+            <th>skills</th>
+            <th>Married</th>
+            <th>Working(Optional)</th>
+        </tr>
+    </thead>
+    <tbody class="bg-dark text-warning p-2">
+        <tr *ngFor="let person of persons;let i=index">
+            <td>{{i+1}}</td>
+            <td class="bg-success text-white">{{person.fname}}</td>
+            <td>{{person.lname}}</td>
+            <td>{{person.contact}}</td>
+            <td class="bg-primary text-white">{{person.skills}}</td>
+            <td>{{person.married}}</td>
+            <td>{{person.isWorking}}</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h1 class="text-center">Players</h1>
+<table class="table table-bordered text-center my-5 bg-info text-white">
+    <thead class="bg-warning text-dark">
+        <tr>
+            <th>Sr no</th>
+            <th>Name</th>
+            <th>Jecy Number</th>
+            <th>Team</th>
+            <th>Centuries</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let player of players;let i=index">
+            <td>{{i+1}}</td>
+            <td>{{player.fname}}</td>
+            <td>{{player.jercyNo}}</td>
+            <td>{{player.team}}</td>
+            <td>{{player.centuries}}</td>
+        </tr>
+    </tbody>
+</table>
+
